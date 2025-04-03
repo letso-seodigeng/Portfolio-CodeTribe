@@ -1,0 +1,138 @@
+/* Basic Reset - good practice for beginners */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes layout calculations easier */
+}
+
+/* Style the main body */
+body {
+    font-family: sans-serif; /* Use a common, readable font */
+    line-height: 1.6;
+    color: #333; /* Dark grey text */
+}
+
+/* Header Styles */
+header {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 10px 20px; /* Add some space inside the header */
+    display: flex; /* Use flexbox for simple alignment */
+    justify-content: space-between; /* Puts logo left, nav right */
+    align-items: center; /* Vertically centers items */
+    border-bottom: 1px solid #ccc; /* Line below header */
+}
+
+.logo img {
+    max-height: 50px; /* Control logo size */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    display: inline; /* Make list items appear side-by-side */
+    margin-left: 15px; /* Space between nav links */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px; /* Add space around the main content */
+    max-width: 960px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the main content area */
+}
+
+section {
+    margin-bottom: 30px; /* Space between sections */
+}
+
+.hero .video-placeholder,
+.details .map-placeholder {
+    background-color: #e9e9e9; /* Placeholder background */
+    min-height: 200px; /* Give placeholders some size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px dashed #ccc;
+    margin-bottom: 20px; /* Space below placeholders */
+}
+
+.intro h1 {
+    margin-bottom: 10px;
+    color: #007bff; /* Blue heading */
+}
+
+.details {
+    /* Basic way to put image and map side-by-side */
+    /* Note: More advanced/robust ways exist (Flexbox/Grid),
+       but this uses simpler concepts for a beginner */
+    overflow: hidden; /* Contains floated elements */
+}
+
+.details .personal-image,
+.details .map-placeholder {
+    width: 48%; /* Roughly half width */
+    float: left; /* Float left to sit side-by-side */
+    margin-right: 4%; /* Space between the two */
+}
+
+.details .map-placeholder {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+
+.details .personal-image img {
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+    display: block; /* Removes extra space below image */
+    border: 1px solid #ccc;
+}
+
+
+/* Styles for About and Contact pages */
+.page-content h1 {
+    margin-bottom: 20px;
+     color: #007bff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px; /* Space above the footer */
+}
+
+.footer-content {
+    display: flex; /* Arrange footer sections */
+    justify-content: space-around; /* Space them out */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    max-width: 960px;
+    margin: 0 auto; /* Center footer content */
+}
+
+.footer-content div {
+    margin: 10px; /* Space around each footer section */
+}
+
+footer a {
+    color: #a0cfff; /* Light blue links in footer */
+    text-decoration: none;
+    margin: 0 5px; /* Space around social links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
